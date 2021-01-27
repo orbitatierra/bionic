@@ -1,5 +1,6 @@
 import { DeseosService } from './../../servicios/deseos.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -8,7 +9,14 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor( public deseosService: DeseosService) {
+  constructor( public deseosService: DeseosService,
+               private router: Router) {
+                 
+  }
+
+  agregarLista() {
+
+    this.router.navigateByUrl('/tabs/tab1/agregar');
 
   }
 
