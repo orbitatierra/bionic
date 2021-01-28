@@ -1,6 +1,7 @@
 <ion-list color="tertiary">
   <ion-item *ngFor="let lista of deseosService.listas" detail color="tertiary" (click)="listaSeleccionada( lista )">
       <ion-label>{{ lista.titulo}}</ion-label>
+     
 
       <ion-note slot="end" color="success"> {{ lista.items.length }} items</ion-note>
   </ion-item>

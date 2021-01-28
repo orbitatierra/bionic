@@ -8,7 +8,8 @@
 
 <ion-content color="tertiary" [fullscreen]="true">
 
-    <app-listas></app-listas>
+    <app-listas>  [terminada]='false' </app-listas>
+       
 
     
     <ion-header collapse="condense">
@@ -17,13 +18,7 @@
         </ion-toolbar>
     </ion-header>
 
- <!--    <ion-list color="tertiary">
-        <ion-item *ngFor="let lista of deseosService.listas" detail color="tertiary" (click)="listaSeleccionada ( lista )">
-            <ion-label>{{ lista.titulo}}</ion-label>
-
-            <ion-note slot="end" color="success"> {{ lista.items.length }} items</ion-note>
-        </ion-item>
-    </ion-list>  -->
+ 
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button color="success" (click)="agregarLista()">
