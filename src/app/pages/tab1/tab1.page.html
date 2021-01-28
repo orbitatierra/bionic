@@ -14,7 +14,7 @@
     </ion-header>
 
     <ion-list color="tertiary">
-        <ion-item *ngFor="let lista of deseosService.listas" detail color="tertiary">
+        <ion-item *ngFor="let lista of deseosService.listas" detail color="tertiary" (click)="listaSeleccionada ( lista )">
             <ion-label>{{ lista.titulo}}</ion-label>
         </ion-item>
     </ion-list>
