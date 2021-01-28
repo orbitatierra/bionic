@@ -7,6 +7,8 @@ import { Tab1Page } from './tab1.page';
 
 
 import { Tab1PageRoutingModule } from '../tab1/tab1-routing.module';
+// import { ListasComponent } from 'src/app/components/listas/listas.component';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 
@@ -15,7 +17,7 @@ import { Tab1PageRoutingModule } from '../tab1/tab1-routing.module';
     IonicModule,
     CommonModule,
     FormsModule,
-    
+    ComponentsModule,
     Tab1PageRoutingModule
   ],
   declarations: [Tab1Page]
